@@ -1,0 +1,41 @@
+
+
+.add{
+box-shadow: 2px 2px 5px;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event_container{
+    margin-top: 30px;
+box-shadow: 2px 2px 5px;
+padding: 5px 20px;
+border-radius: 10px;
+width: 500px;
+}
+
+h1{
+    justify-items: center;
+}
+
+h3{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+span{
+font-size: larger;
+}
+
+button{
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+}

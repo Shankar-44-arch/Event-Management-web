@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <h1>Events</h1>
+    <a href="{% url 'detail' %}"><button class="add">Add Events</button></a>
+    <div class="container">
+    {% for event in events %}
+    <div class="event_container">
+        <p>
+        <h3>Event Name:</h3> <span>{{event.eventName}}</span></p>
+        <p>
+        <h3>College Name:</h3> <span> {{event.collegeName}}</span></p>
+        <div>
+            <h3>Events:</h3>
+
+            <ul>
+                {% for event_types in event.events %}
+                <li><span>{{event_types}}</span></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <p>
+        <h3>Date:</h3> <span>{{event.startDate}} - {{event.endDate}}</span></p>
+        <p>
+        <h3>Contact No:</h3> <span>{{event.contact}}</span></p>
+        <p>
+        <p><h3>Location:</h3> <span>{{event.Location}}</span></p>
+        <h3>Registration Link:</h3><a href="{{event.link}}"> <span>{{event.link}}</span></a></p>
+
+    </div>
+    {% empty %}
+    <p>No Events Yet!</p>
+    {% endfor %}
+</div>
+</body>
+
+</html>

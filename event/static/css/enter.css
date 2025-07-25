@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+text-align: center;
+margin-top: 0px;
+}
+
+.back{
+
+margin-left: 20px;
+}
+
+.container{
+
+    justify-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 300px;
+    margin-bottom: 25px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 10px;
+
+}
+
+.details{
+    padding: 20px;
+    box-shadow: 2px 2px 5px;
+width: 500px;
+    height: fit-content;
+    border-radius: 25px;
+}
