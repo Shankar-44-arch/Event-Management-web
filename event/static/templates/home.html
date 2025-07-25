@@ -16,7 +16,7 @@
     {% for event in events %}
     <div class="event_container">
         <p>
-        <h3>Event Name:</h3> <span>{{event.eventName}}</span></p>
+        <h3>Event Name:</h3> <span class="title">{{event.eventName}}</span></p>
         <p>
         <h3>College Name:</h3> <span> {{event.collegeName}}</span></p>
         <div>
@@ -34,9 +34,8 @@
         <p>
         <h3>Contact No:</h3> <span>{{event.contact}}</span></p>
         <p>
-        <p><h3>Location:</h3> <span>{{event.Location}}</span></p>
+        <p><h3>Location:</h3> <span>{{event.location}}</span></p>
         <h3>Registration Link:</h3><a href="{{event.link}}"> <span>{{event.link}}</span></a></p>
-
     </div>
     {% empty %}
     <p>No Events Yet!</p>

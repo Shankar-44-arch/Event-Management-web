@@ -1,4 +1,7 @@
-
+body{
+      background: linear-gradient(to top, #780206, #061161);
+      padding-bottom: 30px;
+}
 
 .add{
 box-shadow: 2px 2px 5px;
@@ -9,18 +12,24 @@ box-shadow: 2px 2px 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .event_container{
     margin-top: 30px;
-box-shadow: 2px 2px 5px;
+box-shadow: 1.5px 1.5px 4px rgb(244, 212, 153);
 padding: 5px 20px;
 border-radius: 10px;
 width: 500px;
+    background-color:rgb(241, 232, 215);
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 h1{
-    justify-items: center;
+    color: white;
+text-align: center;
 }
 
 h3{
@@ -30,12 +39,28 @@ h3{
 }
 
 span{
-font-size: larger;
+font-size: 20px;
 }
 
 button{
+     background: linear-gradient(to right, #11998e, #38ef7d);
+
+margin-left: 700px;
     width: fit-content;
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px;
+    transition: all 0.15ms;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        transform: translate3d(-1px, -1px, 0);
+    }
+    
+}
+
+.title{
+    font-weight: bold;
+
 }
